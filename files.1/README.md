@@ -66,33 +66,33 @@ sample_data/
 ```bash
 $ python file_organizer.py --path ./sample_data --action clean
 2026-07-17 02:33:26 | INFO    | Automation run started for folder: ./sample_data | action=clean
-2026-07-17 02:33:30 | INFO    | Starting CLEAN operation on: ./sample_data
-2026-07-17 02:33:32 | INFO    | Removed duplicate: 'report.txt' (same content as 'report_copy.txt')
-2026-07-17 02:33:40 | INFO    | Removed empty file: 'empty_file.txt'
-2026-07-17 02:33:46 | INFO    | CLEAN complete. Empty files removed: 1, Duplicates removed: 1
-2026-07-17 02:33:50| INFO    | Automation run finished.
+2026-07-17 02:33:26 | INFO    | Starting CLEAN operation on: ./sample_data
+2026-07-17 02:33:26 | INFO    | Removed duplicate: 'report.txt' (same content as 'report_copy.txt')
+2026-07-17 02:33:26 | INFO    | Removed empty file: 'empty_file.txt'
+2026-07-17 02:33:26 | INFO    | CLEAN complete. Empty files removed: 1, Duplicates removed: 1
+2026-07-17 02:33:26| INFO    | Automation run finished.
 ```
 
 **Step 2 — Rename (prefix "demo"):**
 ```bash
 $ python file_organizer.py --path ./sample_data --action rename --prefix demo
 2026-07-17 02:35:28 | INFO    | Starting RENAME operation on: ./sample_data (prefix='demo')
-2026-07-17 02:35:32 | INFO    | Renamed 'notes.txt' -> 'demo_001.txt'
-2026-07-17 02:35:34 | INFO    | Renamed 'photo.jpg' -> 'demo_002.jpg'
-2026-07-17 02:35:38 | INFO    | Renamed 'report_copy.txt' -> 'demo_003.txt'
-2026-07-17 02:35:42 | INFO    | Renamed 'script.py' -> 'demo_004.py'
-2026-07-17 02:35:48 | INFO    | RENAME complete. Total renamed: 4
+2026-07-17 02:35:28 | INFO    | Renamed 'notes.txt' -> 'demo_001.txt'
+2026-07-17 02:35:28 | INFO    | Renamed 'photo.jpg' -> 'demo_002.jpg'
+2026-07-17 02:35:28 | INFO    | Renamed 'report_copy.txt' -> 'demo_003.txt'
+2026-07-17 02:35:28 | INFO    | Renamed 'script.py' -> 'demo_004.py'
+2026-07-17 02:35:28 | INFO    | RENAME complete. Total renamed: 4
 ```
 
 **Step 3 — Sort by extension:**
 ```bash
 $ python file_organizer.py --path ./sample_data --action sort
 2026-07-17 02:36:31 | INFO    | Starting SORT operation on: ./sample_data
-2026-07-17 02:36:33 | INFO    | Moved 'demo_002.jpg' -> 'jpg/'
-2026-07-17 02:36:35 | INFO    | Moved 'demo_003.txt' -> 'txt/'
-2026-07-17 02:36:36 | INFO    | Moved 'demo_004.py' -> 'py/'
-2026-07-17 02:36:39 | INFO    | Moved 'demo_001.txt' -> 'txt/'
-2026-07-17 02:36:40 | INFO    | SORT complete. Moved: 4, Skipped: 0
+2026-07-17 02:36:31 | INFO    | Moved 'demo_002.jpg' -> 'jpg/'
+2026-07-17 02:36:31 | INFO    | Moved 'demo_003.txt' -> 'txt/'
+2026-07-17 02:36:31 | INFO    | Moved 'demo_004.py' -> 'py/'
+2026-07-17 02:36:31 | INFO    | Moved 'demo_001.txt' -> 'txt/'
+2026-07-17 02:36:31 | INFO    | SORT complete. Moved: 4, Skipped: 0
 ```
 
 **Final folder structure:**
