@@ -72,12 +72,11 @@ python weather_explorer.py London --units imperial
 
 ## images output
 
-```
 <img width="1517" height="850" alt="Screenshot 2026-07-18 203258" src="https://github.com/user-attachments/assets/64ae3cea-5421-4a16-9786-c9a97449b538" />
 
 <img width="1536" height="831" alt="Screenshot 2026-07-18 203603" src="https://github.com/user-attachments/assets/b77facb9-6528-422d-ac2b-3cc64be306fb" />
 
----
+
 
 ## Project Structure
 
