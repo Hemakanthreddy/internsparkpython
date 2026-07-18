@@ -100,3 +100,6 @@ README.md             # this file
 ## Author
 
 Hemakanth Reddy [LinkedIn](https://linkedin.com/in/hemakanth-reddy)
+## Report
+[Weather_Explorer_Report (1).docx](https://github.com/user-attachments/files/30153440/Weather_Explorer_Report.1.docx)
+
