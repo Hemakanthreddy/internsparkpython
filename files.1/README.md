@@ -50,66 +50,14 @@ python file_organizer.py --path ./my_folder --action all
 
 ## Sample Input / Output
 
-**Input folder (`sample_data/`) before running anything:**
+<img width="1392" height="786" alt="Screenshot 2026-07-17 180540" src="https://github.com/user-attachments/assets/51f4666d-afe7-4247-8e8d-5ed126e4d772" />
+<img width="1536" height="862" alt="Screenshot 2026-07-17 200709" src="https://github.com/user-attachments/assets/b250a15a-6726-492c-882e-a3531b47c1aa" />
+<img width="1536" height="861" alt="Screenshot 2026-07-17 200604" src="https://github.com/user-attachments/assets/2ed7f830-bfc1-4a6e-8ffe-cdd2c5b257d9" />
+<img width="1521" height="855" alt="Screenshot 2026-07-17 181405" src="https://github.com/user-attachments/assets/57138d46-7efc-4c22-bb3d-d98e97ec1e8b" />
 
-```
-sample_data/
-├── report.txt        (contains "Report Q1")
-├── report_copy.txt    (duplicate of report.txt — same content)
-├── notes.txt
-├── script.py
-├── photo.jpg
-└── empty_file.txt     (0 bytes)
-```
-
-**Step 1 — Clean:**
-```bash
-$ python file_organizer.py --path ./sample_data --action clean
-2026-07-17 02:33:26 | INFO    | Automation run started for folder: ./sample_data | action=clean
-2026-07-17 02:33:26 | INFO    | Starting CLEAN operation on: ./sample_data
-2026-07-17 02:33:26 | INFO    | Removed duplicate: 'report.txt' (same content as 'report_copy.txt')
-2026-07-17 02:33:26 | INFO    | Removed empty file: 'empty_file.txt'
-2026-07-17 02:33:26 | INFO    | CLEAN complete. Empty files removed: 1, Duplicates removed: 1
-2026-07-17 02:33:26| INFO    | Automation run finished.
-```
-
-**Step 2 — Rename (prefix "demo"):**
-```bash
-$ python file_organizer.py --path ./sample_data --action rename --prefix demo
-2026-07-17 02:35:28 | INFO    | Starting RENAME operation on: ./sample_data (prefix='demo')
-2026-07-17 02:35:28 | INFO    | Renamed 'notes.txt' -> 'demo_001.txt'
-2026-07-17 02:35:28 | INFO    | Renamed 'photo.jpg' -> 'demo_002.jpg'
-2026-07-17 02:35:28 | INFO    | Renamed 'report_copy.txt' -> 'demo_003.txt'
-2026-07-17 02:35:28 | INFO    | Renamed 'script.py' -> 'demo_004.py'
-2026-07-17 02:35:28 | INFO    | RENAME complete. Total renamed: 4
-```
-
-**Step 3 — Sort by extension:**
-```bash
-$ python file_organizer.py --path ./sample_data --action sort
-2026-07-17 02:36:31 | INFO    | Starting SORT operation on: ./sample_data
-2026-07-17 02:36:31 | INFO    | Moved 'demo_002.jpg' -> 'jpg/'
-2026-07-17 02:36:31 | INFO    | Moved 'demo_003.txt' -> 'txt/'
-2026-07-17 02:36:31 | INFO    | Moved 'demo_004.py' -> 'py/'
-2026-07-17 02:36:31 | INFO    | Moved 'demo_001.txt' -> 'txt/'
-2026-07-17 02:36:31 | INFO    | SORT complete. Moved: 4, Skipped: 0
-```
-
-**Final folder structure:**
-```
-sample_data/
-├── file_organizer.log
-├── jpg/
-│   └── demo_002.jpg
-├── py/
-│   └── demo_004.py
-└── txt/
-    ├── demo_001.txt
-    └── demo_003.txt
-```
 
 All of the above log lines are also written automatically to
-`sample_data/file_organizer.log` — nothing needs to be copy-pasted by hand.
+`sample/file_organizer.log` — nothing needs to be copy-pasted by hand.
 
 ## Design notes
 
@@ -128,3 +76,6 @@ All of the above log lines are also written automatically to
 ## License
 
 MIT — free to use, modify, and share.
+## report
+[InternSpark_Task1_File_Automation.docx](https://github.com/user-attachments/files/30153319/InternSpark_Task1_File_Automation.docx)
+
