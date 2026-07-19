@@ -113,3 +113,6 @@ README.md
 
 Hemakanth Reddy
 [GitHub](https://github.com/Hemakanthreddy) · [LinkedIn](https://linkedin.com/in/hemakanth-reddy)
+
+## Report
+[Sales_Data_Analysis_Report.docx](https://github.com/user-attachments/files/30160423/Sales_Data_Analysis_Report.docx)
